@@ -50,11 +50,11 @@ should calculate and verify that this is the case.)
 
 For this lab, you are asked to implement the following functions in `set.c`:
 
-* `static int add_element(int v)`: This function adds an element with index `v`
+* `int add_element(int v)`: This function adds an element with index `v`
  to our set `J`. 
-* `static int remove_element(int v)`: This function removes an element with
+* `int remove_element(int v)`: This function removes an element with
  index `v` from our set `J`.
-* `static int contains_element(int v)`: This function checks if an element with
+* `int contains_element(int v)`: This function checks if an element with
  index `v` is contained in our set `J`.
 
 You are only allowed to use bitwise operators `&`, `|`, `^`, `~`, `<<`, `>>`.
