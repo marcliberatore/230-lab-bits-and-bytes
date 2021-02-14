@@ -32,7 +32,7 @@ pineapple : 51
 ...
 ```
 
-Then a set of fruits
+Then a set of fruits, e.g.,
 
 ```
 {apple, grape, pineapple}
