@@ -58,7 +58,7 @@ For this lab, you are asked to implement the following functions in `set.c`:
  index `v` is contained in our set `J`.
 
 You are only allowed to use bitwise operators `&`, `|`, `^`, `~`, `<<`, `>>`, as
-well as `+`, `-`. (You may not need all of them.) Arithmetic operators `/`,
+well as `+`, `-`, `<`, `>`. (You may not need all of them.) Arithmetic operators `/`,
 `%`, and  `*` are not allowed.
 
 Compile your code with
