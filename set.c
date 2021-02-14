@@ -17,6 +17,7 @@ int remove_element(int v) {
 }
 
 // Checks if an element with index v is contained in the set.
+// Returns -1 if v is negative or beyond the maximum capacity of the set.
 // Returns 0 if v is not in the set.
 // Returns 1 if v is in the set.
 int contains_element(int v) {
