@@ -8,8 +8,8 @@
 // is N x 32.
 unsigned int J[N]; 
 
-static int add_element(int v);
-static int remove_element(int v);
-static int contains_element(int v);
+int add_element(int v);
+int remove_element(int v);
+int contains_element(int v);
 
 #endif
