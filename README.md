@@ -10,10 +10,10 @@ To start working on this lab you must be logged in to the Edlab and in your
 $ git clone https://github.com/umass-cs-230/230-lab-bits-and-bytes
 ```
 
-We represent a set by an `unsigned int[]` `J` with length `N`. Each *bit* in `J`
-represents a unique element. If a certain element is contained in our set, then
-the bit in `J` corresponding to that element is turned to 1, otherwise 0. We
-order the bits in `J` by counting from `J[0]` to `J[N-1]`, and for each
+We represent a set by an `unsigned int` array `J` with length `N`. Each *bit*
+in `J` represents a unique element. If a certain element is contained in our
+set, then the bit in `J` corresponding to that element is turned to 1, otherwise
+0. We order the bits in `J` by counting from `J[0]` to `J[N-1]`, and for each
 `unsigned int` from the least significant bit to the most. Consider the
 following example.
 
@@ -49,12 +49,13 @@ The set
 ```
 is represented by `000...0101`, i.e., `J[0]=5`.
 
-Each component of `J` could keep track of 32. For the following set
+Each component of `J` could keep track of 32 fruits. (There are 32 bits in an
+`unsigned int`.) For the following set
 
 ```
 {pineapple}
 ```
-The corresponding bit falls into the `51 >> 5`th element of `J`, which is
+The corresponding bit falls into the `(51 >> 5)`th element of `J`, which is
 `J[1]`. (Right shifting by 5 is equivalent to dividing by 32.) The expression
 `((unsigned int)(51 << 27)) >> 27` will tell us which bit in `J[1]` corresponds
 to `pineapple`. (Why is this?) 
@@ -72,9 +73,10 @@ int` array to 1. Specifically,
 * `pineapple` corresponds to the 19th bit of `J[1]`
 * `tangerine` corresponds to the 2nd bit of `J[2]`
 
-And our set `{apple, grape, pineapple, tangerine}` would be represented by `J`
-where `J[0] = 16,777,218`, `J[1] = 524,288`, `J[2] = 4`, and every other
-component of `J` is 0. (You should calculate and verify that this is the case.)
+And our set `{apple, grape, pineapple, tangerine}` would be represented by an
+`unsigned int` array `J` where `J[0] = 16,777,218`, `J[1] = 524,288`, `J[2] =
+4`, and every other component of `J` is 0. (You should calculate and verify that
+this is the case.)
 
 For this lab, you are asked to implement the following functions in `set.c`:
 
