@@ -55,10 +55,10 @@ Each component of `J` could keep track of 32 fruits, because there are 32 bits i
 ```
 {pineapple}
 ```
-The corresponding bit falls into the `(51 >> 5)`th element of `J`, which is
+The corresponding bit falls into the `i = (51 >> 5)`th element of `J`, which is
 `J[1]`. (Right shifting by 5 is equivalent to dividing by 32.) The expression
-`((unsigned int)(51 << 27)) >> 27` will tell us which bit in `J[1]` corresponds
-to `pineapple`. (Why is this?) 
+`k = ((unsigned int)(51 << 27)) >> 27` will tell us which bit `k` in `J[1]`
+corresponds to `pineapple`. (Why is this?) 
 
 More generally, a set of fruits, e.g.,
 
