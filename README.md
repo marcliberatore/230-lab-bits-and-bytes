@@ -91,6 +91,8 @@ You are only allowed to use bitwise operators `&`, `|`, `^`, `~`, `<<`, `>>`, as
 well as `+`, `-`, `<`, `>`. (You may not need all of them.) Arithmetic operators `/`,
 `%`, and  `*` are not allowed.
 
+Modify `main.c` to write test cases for your code.
+
 Compile your code with
 ```
 $ gcc main.c set.c -o set
