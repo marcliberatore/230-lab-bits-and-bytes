@@ -98,4 +98,4 @@ Compile your code with
 $ gcc main.c set.c -o set
 ```
 
-Submit your completed `set.c` on Gradescope.
+Submit your completed `set.c` on Gradescope. (Do not modify `set.h`.)
