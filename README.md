@@ -50,7 +50,7 @@ The set
 is represented by `000...0101`, i.e., `J[0]=5`.
 
 Each component of `J` could keep track of 32 fruits, because there are 32 bits in an
-`unsigned int`. For the following set
+`unsigned int` on the Edlab machines. For the following set
 
 ```
 {pineapple}
