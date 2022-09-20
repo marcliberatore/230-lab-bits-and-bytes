@@ -1,4 +1,4 @@
-# COMPSCI 230 Spring 2021
+# COMPSCI 230 Fall 2022
 # Set with Bit Vectors
 
 In this lab we will implement a set, represented by an `unsigned int` array.
