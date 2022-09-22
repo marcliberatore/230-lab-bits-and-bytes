@@ -182,3 +182,5 @@ For this part of the lab, modify your existing code for parts 1 and 2 to use onl
 ## When you're done
 
 Regardless of how far you got -- and we don't expect everyone to get to the end of part 3! --  submit your completed `set.c` on Gradescope. Do not modify`set.h`, and do not submit `set.h` or `main.h` -- we want only your `set.c` file.
+
+If you work in a group, remember to add your group members to the submission in the Gradescope web interface!
