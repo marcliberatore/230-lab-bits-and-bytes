@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <string.h>
 #include "set.h"
 
 // Convert an unsigned integer to its human-readbable binary representation.
