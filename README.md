@@ -178,4 +178,7 @@ Again, try printing the bits.
 
 For this part of the lab, modify your existing code for parts 1 and 2 to use only bit shifts to correctly implement the bitset, and make sure they still work using your test cases in `main()`!
 
-Submit your completed `set.c` on Gradescope. (Do not modify `set.h`.)
+
+## When you're done
+
+Regardless of how far you got -- and we don't expect everyone to get to the end of part 3! --  submit your completed `set.c` on Gradescope. Do not modify`set.h`, and do not submit `set.h` or `main.h` -- we want only your `set.c` file.
