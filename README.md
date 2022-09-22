@@ -12,7 +12,7 @@ From this directory run the command:
 $ git clone https://github.com/marcliberatore/230-lab-bits-and-bytes
 ```
 
-to make a copy of this lab directory, or use [Github Desktop](https://desktop.github.com), or download and decompress a zip file directly from Github. 
+to make a copy of this lab directory, or use [Github Desktop](https://desktop.github.com), or download and decompress a zip file directly from Github to use locally (the green "Code" button has a "Download ZIP" option). 
 
 ## Part 1: A single `unsigned int` bitset
 
@@ -144,9 +144,9 @@ Compile your code with
 $ gcc main.c set.c -o set
 ```
 
-## Part 3
+## Part 3: Hacker's Delight
 
-Division and modulus operators are, for various reasons you'll learn in a class like COMPSCI 335, often slower than bit shifts. You can't always replace division (or multiplication, or modulus) with bit shifts -- and in fact, you usually shouldn't, as shift behavior on signed integers might not do what you expect on negative numbers. But, when what you want is to actually shift bits around, they're a great choice.
+Division and modulus operators are, for various reasons you'll learn in a class like COMPSCI 335, often slower than bit shifts. You can't always replace division (or multiplication, or modulus) with bit shifts -- and in fact, you usually shouldn't, as shift behavior on signed integers might not do what you expect on negative numbers. But, when what you want is to actually shift bits around, they're a great choice. (Nerds might wish to consult the antique but still fascinating and occasionally useful [Hacker's Delight](https://en.wikipedia.org/wiki/Hacker's_Delight) for more of this sort of thing.)
 
 And, it turns out, for this lab, we're only using division and modulus for, essentially, that purpose -- we're trying to figure out what position a bit needs to go into, and we're operating on unsigned integers.
 
