@@ -20,7 +20,7 @@ char* as_binary(unsigned int n) {
 // Returns 0 if v is already in the set. (You can use your own part1_contains_element())
 // Returns 1 if v is successfully added.
 int part1_add_element(int v) {
-
+    return 0;
 }
 
 // Remove an element with index v from the set I.
