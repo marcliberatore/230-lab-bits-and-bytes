@@ -152,7 +152,11 @@ And, it turns out, for this lab, we're only using division and modulus for, esse
 
 So, how can we divide by 32? It's the same as right shifting by five places (2 to the power 5 is 32; each digit we shift left is equivalent, for unsigned integers doing a logical shift, to division by 2). Recall our example of `pineapple`, which is the 51st item. We can right-shift 51 by 5 (`51 >> 5`) to divide by 32.
 
-What about modulus, equivalent in this case to the remainder of the division? The remainder is what's "left over" after division -- it's the five bits that we "got rid of" when we shifted right by 5. Can we keep these five bits and "get rid of" the rest of the bits? Not in one bit shift, but in two, yes we can.
+What about modulus, equivalent in this case to the remainder of the division? The remainder is what's "left over" after division -- it's the five bits that we "got rid of" when we shifted right by 5. Can we keep these five bits and "get rid of" the rest of the bits? Yes! There at least two ways.
+
+If you know the number of bits you want to keep, you could mask. So, for example, if you want to keep the five least significant bits, you can bitwise-and (`&`) with the appropriate number. Here, it's 31 (which is, in binary, `000....011111`). So you could compute this as `51 & 31`.
+
+Or, you could do it using shifts, again. Not in one bit shift, but in two.
 
 First, we'll shift left the bits we want to get rid of -- how many? There are 32 bits total and we want to keep 5, so we'll shift left by 27.
 
