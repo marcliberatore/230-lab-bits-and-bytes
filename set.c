@@ -17,15 +17,15 @@ char* as_binary(unsigned int n) {
 
 // Add an element with index v to the set I.
 // Returns -1 if v is negative or beyond the maximum capacity of the set.
-// Returns 0 if v is already in the set.
+// Returns 0 if v is already in the set. (You can use your own part1_contains_element())
 // Returns 1 if v is successfully added.
 int part1_add_element(int v) {
-    return 0;
+
 }
 
 // Remove an element with index v from the set I.
 // Returns -1 if v is negative or beyond the maximum capacity of the set.
-// Returns 0 if v is already not in the set.
+// Returns 0 if v is already not in the set. (You can use your own part1_contains_element())
 // Returns 1 if v is successfully removed.
 int part1_remove_element(int v) {
     return 0;
@@ -41,7 +41,7 @@ int part1_contains_element(int v) {
 
 // Add an element with index v to the set J.
 // Returns -1 if v is negative or beyond the maximum capacity of the set.
-// Returns 0 if v is already in the set.
+// Returns 0 if v is already in the set. (You can use your own part2_contains_element())
 // Returns 1 if v is successfully added.
 int part2_add_element(int v) {
     return 0;
@@ -49,7 +49,7 @@ int part2_add_element(int v) {
 
 // Remove an element with index v from the set J.
 // Returns -1 if v is negative or beyond the maximum capacity of the set.
-// Returns 0 if v is already not in the set.
+// Returns 0 if v is already not in the set.(You can use your own part2_contains_element())
 // Returns 1 if v is successfully removed.
 int part2_remove_element(int v) {
     return 0;
