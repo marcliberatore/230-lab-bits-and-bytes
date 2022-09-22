@@ -109,7 +109,7 @@ For the following set:
 {pineapple}
 ```
 
-The corresponding bit falls in the 51s bit of J -- but each element of J has only 32 bits! So it falls in the `52 / 32` element, `J[1]` -- truncating division tells us "how many" groups of 32 into the array we need to go.
+The corresponding bit falls in the 51st bit of J -- but each element of J has only 32 bits! So it falls in the `52 / 32` element, `J[1]` -- truncating division tells us "how many" groups of 32 into the array we need to go.
 
 Then we need to know, which bit in `J[1]` corresponds to the element? Well, we've already advanced to J[1], which means we're 32 bits in. You could subtract 32 from 51; but that will get clunky if you're at a higher index of J. Instead, we see that we're looking for how many bits are "left over" after our division -- in other words, we're looking for the modulus. So we'd set the bit at `51 % 32 = 19`, the nineteenth least significant bit, in  `J[1]`.
 
