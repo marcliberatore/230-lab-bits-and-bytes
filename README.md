@@ -12,7 +12,7 @@ From this directory run the command:
 $ git clone https://github.com/marcliberatore/230-lab-bits-and-bytes
 ```
 
-to make a copy of this lab directory, or use [Github Desktop](https://desktop.github.com), or download and decompress a zip file directly from Github. 
+to make a copy of this lab directory, or use [Github Desktop](https://desktop.github.com), or download and decompress a zip file directly from Github to use locally (the green "Code" button has a "Download ZIP" option). 
 
 ## Part 1: A single `unsigned int` bitset
 
